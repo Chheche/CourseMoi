@@ -1,0 +1,117 @@
+#annonceUti{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.photo{
+    height: 400px;
+    width: 600px;
+    background-image: url("../../img/sandwich.jpeg");
+    background-size: cover;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.description{
+    width: 40rem;
+    height: 20rem;
+}
+.description p{
+    margin: 0;
+}
+.lieu{
+    display: flex;
+    gap: 1rem;
+}
+.annonceur{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 30px;
+    border-color: black;
+    box-shadow: 10px 10px black;
+    background-color: whitesmoke;
+    width: 20rem;
+    height: 17rem;
+    padding: 60px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.annonceur h2{
+    margin-bottom: 50px;
+}
+.annonceur button {
+    width: 300px;
+    margin-bottom: 25px;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.annonceur button:hover {
+    letter-spacing: 3px;
+    background-color: rgb(93, 193, 93);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93, 193, 93) 0px 7px 29px 0px;
+}
+
+.annonceur button:active {
+    letter-spacing: 3px;
+    background-color: rgb(93, 193, 93);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93, 193, 93) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+    font-size: 15px;
+}
+
+.description button {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 38px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    background-color: rgb(93, 193, 93);
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.15s linear;
+}
+
+.description button:hover {
+    background-color: rgba(29, 201, 160, 0.08);
+    border-color: rgb(93, 193, 93);
+    color: rgb(93, 193, 93);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.description button:active {
+    background-color: transparent;
+    border-color: rgb(93, 193, 93);
+    color: rgb(93, 193, 93);
+    transform: translateY(5px) scale(0.95);
+}
+
+.description button:disabled {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #8E8E93;
+    border-color: #8E8E93;
+}

@@ -1,0 +1,112 @@
+/* permet de cacher la barre de defilement */
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    margin: 0;
+    background-image: url("../img/plat.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{ 
+    top: 0;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.104);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(20, 151, 20, 0.352);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8em;
+    width: 100%;
+}
+
+.gauche{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+}
+
+.logo{
+    color: rgb(33, 169, 9);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 1rem 0 5rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.droite{
+    margin: 3em 8em 0 0;
+    width: 20em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.droite button{
+    height: 2.5em;
+    width: 8em;
+    border-radius: 10px;
+    background-color: rgb(255, 249, 239);
+    border: 1px solid rgb(255, 231, 194);
+    color: rgb(161, 137, 0);
+}
+
+.droite button:hover{
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------- */
+
+#ouverture .titre{
+    text-align: center;
+    color: green;
+    padding: 18% 0 0 0;
+    height: 30em;
+}
+
+.avertissement{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px grey;
+    height: 35em;
+    margin: 0 20% 0 20%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1% 0 1% 0;
+}
+
+.presentation{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px grey;
+    margin: 5% 20% 5% 20%;
+    border-radius: 10px;
+    height: 35em;
+    text-align: center;
+    padding: 1% 0 1% 0;
+}
+
+/* ---------------------------------------------------------- */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3% 0 3% 0;
+}
+
+#haut{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.text p{
+    margin: 8% 0 8% 0;
+}

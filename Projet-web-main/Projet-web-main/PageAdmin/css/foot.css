@@ -1,0 +1,48 @@
+/* FOOTER */
+
+footer{
+    margin-top: 7rem;
+    background-color: rgb(233, 233, 233);
+    color: white;
+    text-align: center;
+    padding: 3% 0 3% 0;
+}
+
+#haut{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#bas{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text p{
+    margin: 8% 0 8% 0;
+}
+
+.decouvrir{
+    width: 12rem;
+    height: 15rem;
+    background-color: grey;
+}
+
+.mentions{
+    width: 12rem;
+    height: 15rem;
+    background-color: grey;
+}
+
+.aides{
+    width: 12rem;
+    height: 15rem;
+    background-color: grey;
+}
+
+.network:hover{
+    cursor: pointer;
+}

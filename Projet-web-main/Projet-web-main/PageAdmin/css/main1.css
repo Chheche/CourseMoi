@@ -1,0 +1,476 @@
+/* permet de cacher la barre de defilement */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* MAIN */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../../PagePrincipale/img/sobre.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.salutation{
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    margin-left: 14vh;
+}
+
+.btn-ctn{
+    display: flex;
+    gap: 1vh;
+}
+
+.info{
+    display: flex;
+    justify-content: end;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 3rem;
+}
+
+/* Bouton Filtres */
+
+.setting-btn {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 0px 2px rgb(233, 233, 233);
+}
+  
+.bar {
+    width: 1rem;
+    height: 2px;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 2px;
+    margin-top: 3px;
+}
+
+.bar::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgb(60, 60, 60);
+    transition: all 0.3s;
+    box-shadow: 0px 0px 5px white;
+}
+
+.bar1::before {
+    transform: translateX(-4px);
+}
+
+.bar2::before {
+    transform: translateX(4px);
+}
+
+.setting-btn:hover .bar1::before {
+    transform: translateX(4px);
+}
+
+.setting-btn:hover .bar2::before {
+    transform: translateX(-4px);
+}
+
+/* */
+
+.hide{
+    display: none;
+}
+
+.sup{
+    margin-top: 0.5rem;
+}
+
+.sup:hover{
+    border-radius: 1rem;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Page qui apparait quand on clique bouton filtres */
+
+.modal-content2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 38rem;
+    height: 20rem;
+    text-align: center;
+}
+
+.modal-title2{
+    margin-left: 14rem;
+    font-weight: 700;
+}
+
+.box-ligne2{
+    margin-top: 1.5rem;
+}
+
+.box-ligne3{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Page qui apparait quand on clique bouton filtres */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-head{
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title{
+    margin-left: 15rem;
+    font-weight: 700;
+}
+
+.modal-title1{
+    margin-left: 21rem;
+    font-weight: 700;
+}
+
+.enr-but{
+    --primary-color: #1c9628;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+  
+.enr-but:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.enr-pos1{
+    margin-left: 27rem;
+}
+
+.enr-pos2{
+    margin-left: 23rem;
+}
+
+/* CHECKBOX */
+
+.check-container input {
+    display: none;
+  }
+  
+.check-container {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    gap: 1rem;
+}
+
+.check-top{
+    margin-top: 1rem;
+}
+  
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #2196F300;
+    border-radius: 0.25em;
+    transition: all 0.25s;
+    margin-top: 1.20rem;
+}
+
+.check-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    transform: rotate(0deg);
+    border: 0.1em solid black;
+    left: 0;
+    top: 0;
+    width: 1.05em;
+    height: 1.05em;
+    border-radius: 0.25em;
+    transition: all 0.25s, border-width 0.1s;
+}
+  
+.check-container input:checked ~ .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border-color: #fff0 white white #fff0;
+    border-width: 0 0.15em 0.15em 0;
+    border-radius: 0em;
+    transform: rotate(45deg);
+}  
+
+/* Page qui apparait quand on clique bouton mettre en ligne */
+
+.add {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.add-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50rem;
+    height: 35rem;
+    text-align: center;
+}
+
+.add-head{
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Annonce */
+
+.annonce-ctn1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 3rem;
+    margin-left: 4.5rem;
+    margin-right: 8rem;
+    gap: 1.5rem;
+}
+
+.annonce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 1rem;
+    background-color: #1c9628;
+}
+
+.top-annonce{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.people{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.com{
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    height: 7rem;
+    border-radius: 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.com-head{
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+
+.com-main{
+    margin-left: 1rem;
+}
+
+.addition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: solid black;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 13.5rem;
+}
+
+.addition:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.suppression{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: solid black;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: 15rem;
+}
+
+.suppression:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+/* Profil */
+
+
+.profil {
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    top: 11vh;
+    left: 176vh;
+    border-radius: 1rem;
+    width: 12rem;
+    height: 10rem;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profil-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.pr-top{
+    margin-top: 1rem;
+}
+
+.pr-top1{
+    margin-top: 0.5rem;
+}
+
+.pr-bottom{
+    margin-bottom: 0.5rem;
+}
+
+.barre{
+    border-bottom:1px solid rgb(226, 226, 226);
+}
+
+/* FORM */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.contact-ligne{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-ligne1{
+    display: none;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-input{
+    margin-top: 5px;
+    border-radius: 1.5rem;
+    border: none;
+    background-color:rgb(233, 233, 233);
+    padding-left: 10px;
+    color: black;
+    resize: none;
+    outline: none;
+}
+
+.taille1{
+    width: 15rem;
+    height: 3rem;
+}
+
+.taille2{
+    width: 31rem;
+    height: 3rem;
+}
+
+/* MEDIA-QUERY */
+
+/* PC petite taille d'écran */
+
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+    .profil{
+        top: 13vh;
+    }
+}

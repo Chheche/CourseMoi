@@ -1,0 +1,90 @@
+/* BUTTON */
+
+button{
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+.button-add{
+    width: 32vh;
+    height: 4vh;
+}
+
+.button-add:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+    width: 32vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+/*
+.button-trad{
+    width: 7vh;
+    height: 4vh;
+}
+
+.button-trad:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+    width: 7vh;
+    height: 4vh;
+}
+*/
+
+.button-profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 4vh;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0px 2px rgb(233, 233, 233);
+    gap: 5px;
+}
+
+.button-profil:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+    width: 8vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.button-ads{
+    width: 12vh;
+    height: 4vh;
+}
+
+.button-ads:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+    width: 12vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.button-pro{
+    width: 12vh;
+    height: 4vh;
+}
+
+.button-pro:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+    width: 12vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.bt-pr{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+.bt-pr:hover{
+    background-color: rgb(233, 233, 233);
+}

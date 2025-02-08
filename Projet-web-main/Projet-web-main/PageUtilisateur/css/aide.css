@@ -1,0 +1,154 @@
+/* permet de cacher la barre de defilement */
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* LOGO */
+
+.logo{
+    color: rgb(37, 179, 12);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 5.7rem;
+    margin-top: 2rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.mid{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.title{
+    margin-left: 18rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Profil */
+
+
+.profil {
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    top: 13vh;
+    left: 176vh;
+    border-radius: 1rem;
+    width: 12rem;
+    height: 10rem;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profil-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.pr-top{
+    margin-top: 1rem;
+}
+
+.pr-top1{
+    margin-top: 0.5rem;
+}
+
+.pr-bottom{
+    margin-bottom: 0.5rem;
+}
+
+.barre{
+    border-bottom:1px solid rgb(226, 226, 226);
+}
+
+.bt-pr{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+.bt-pr:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+.button-profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    margin-top: 2rem;
+    font-size: 1rem;
+    width: 8vh;
+    height: 4vh;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0px 2px rgb(233, 233, 233);
+    gap: 5px;
+}
+
+.button-profil:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+    width: 8vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+/* Main */
+
+.question-ctn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 25rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    gap: 3rem;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.ligne1{
+    display: flex;
+    gap: 5rem;
+}
+
+/* MEDIA-QUERY */
+
+/* PC petite taille d'écran */
+
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+    .title{
+        margin-left: 12rem;
+    }
+
+    .question-ctn{
+        margin-left: 14rem;
+    }
+}

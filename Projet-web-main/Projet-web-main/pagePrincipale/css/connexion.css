@@ -1,0 +1,141 @@
+.page{
+    background-image: url("../img/sobre.jpg");
+    background-size: cover;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+h2, h3{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+/* Connexion */
+
+#connexion .titre{
+    padding: 9% 0% 0% 5%;   
+    height: 6em;
+}
+
+#connexion .formulaire{
+    height: 16em;
+    display: flex;
+    justify-content: center;
+}
+
+#connexion .email, #connexion .password, #connexion .bouton{
+    margin: 3% 0% 4% 0%;
+}
+
+/* Création */
+
+#creation .titre{
+    padding: 9% 0% 0% 5%;   
+    height: 4em;
+}
+
+#creation .formulaire{
+    height: 21em;
+    display: flex;
+    justify-content: center;
+}
+
+/* Connexion et Création */
+
+#connexion, #creation{
+    width: 35em;
+    height: 25em;
+    margin-top: 8em;
+    margin-bottom: 4em;
+    background-color: rgb(243, 235, 235);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 80%;
+}
+
+label{
+    font-weight: bold;
+}
+
+.email{
+    margin-top: 1%;
+}
+.email, .password, .username{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+input{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    height: 2em;
+}
+
+.bouton, p{
+    display: flex;
+    justify-content: center;
+}
+
+#creation button, #connexion button {
+    width: 70%;
+    height: 100%;
+    margin-top: 3%;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: scale 2s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+  
+#creation button::before, #connexion button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: black;
+    transition: scale 2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+#creation button:hover::before, #connexion button:hover::before {
+    scale: 3;
+}
+
+#creation button:hover, #connexion button:hover{
+    color: white;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+#creation button:active, #connexion button:active{
+    scale: 1;
+}
+
+.changement{
+    margin-top: 4%;
+    justify-content: center;
+    text-align: center;
+}
+
+.changement a{
+    margin-left: 3%;
+}
