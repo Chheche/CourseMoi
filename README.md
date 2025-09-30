@@ -1,6 +1,7 @@
 # CourseMoi
 
 Présentation du projet
+
 Notre site web est conçu pour simplifier la vie des étudiants en mettant en place une plateforme d'entraide et de partage. Grâce à des fonctionnalités innovantes, nous encourageons la collaboration entre étudiants pour faciliter leur quotidien tout en favorisant une consommation responsable.
 
 Fonctionnalités principales
@@ -13,5 +14,5 @@ Objectifs du projet
 - Encourager une consommation responsable et locale en mutualisant les services.
 
 
-
+Rafael BARRETO PANNETIER
 
